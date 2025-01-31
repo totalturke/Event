@@ -15,7 +15,7 @@
     "react-router-dom": "^6.20.0",
     "axios": "^1.6.2",
     "qrcode.react": "^3.1.0",
-    "react-qr-reader": "^3.0.0-beta-1",
+    "html5-qrcode": "^2.3.8",
     "chart.js": "^4.4.0",
     "react-chartjs-2": "^5.2.0",
     "@chakra-ui/react": "^2.8.2",
