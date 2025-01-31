@@ -13,7 +13,6 @@ import { useAuth } from '../context/AuthContext';
 export default function Home() {
   const navigate = useNavigate();
   const { isAuthenticated } = useAuth();
-  const bgColor = useColorModeValue('gray.50', 'gray.900');
   const textColor = useColorModeValue('gray.600', 'gray.200');
 
   return (

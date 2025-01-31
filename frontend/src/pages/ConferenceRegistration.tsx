@@ -5,7 +5,6 @@ import {
   useToast,
   Box,
 } from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
 import ConferenceSelector from '../components/ConferenceSelector';
 import QRDisplayModal from '../components/QRDisplayModal';
 import { api } from '../services/api';
@@ -15,7 +14,6 @@ export default function ConferenceRegistration() {
   const [currentQR, setCurrentQR] = useState('');
   const [conferenceName, setConferenceName] = useState('');
   const toast = useToast();
-  const navigate = useNavigate();
 
   const handleConferenceSelection = async (conferenceIds: number[]) => {
     try {
