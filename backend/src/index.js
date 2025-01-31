@@ -24,6 +24,11 @@ app.use('/api/conferences', conferenceRoutes);
 app.use('/api/attendance', attendanceRoutes);
 app.use('/api/surveys', surveyRoutes);
 
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 // Serve static files from the frontend build directory
 app.use(express.static(path.join(__dirname, '../../frontend/dist')));
 
